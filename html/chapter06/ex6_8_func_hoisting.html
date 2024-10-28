@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        messagePrint();
+        // messagePrint2();
+        // messangPrint3(); => 이 두개는 안됨
+
+        //이름 있는 함수
+        function messagePrint(){
+            console.log("message1");
+        }
+        
+        //이름 없는 함수(익명함수)
+        let messagePrint2=function()    {
+            console.log("message2");
+        };
+
+        //자바스크립트에선 이걸 화살표함수라 부른다
+        let messagePrint3=() => console.log("message3");
+
+        messagePrint2();
+        messagePrint3();
+    
+        //var 혹은 이름 있는 함수만 호이스팅이 가능하다.
+
+    </script>
+</head>
+<body>
+    <h1>함수 호이스팅 테스트</h1>
+    
+</body>
+</html>
