@@ -17,6 +17,9 @@
             return item > 7;
         }
 
+        //*표 찍은 것은 자주 쓰이는것
+
+
         //item: 9,8,7,6,5
 
         //화살표함수
@@ -25,14 +28,14 @@
         //이름있는함수
         // let a4=a2.filter(filterValue);
 
-        //익명함수
+        //익명함수*
         let a4=a2.filter(function(item){
             return item>=6;
         });
 
         document.write(`a2.filter : [${a4}] <br>`);
 
-        //배열숙에 값을 찾아서 위치값을 요구한다.
+        //배열숙에 값을 찾아서 위치값을 요구한다.*
         let index=a2.indexOf(6);
         document.write(`a2.indexof(6) : ${index} <br>`);
 
@@ -58,7 +61,7 @@
         a2.unshift(20);
         document.write(`a2.unShift(20) = [${a2}] <br>`)
 
-        //슬라이스 배열에서 해당되는 슬라이스치즈를 빼먹는것
+        //슬라이스 배열에서 해당되는 슬라이스치즈를 빼먹는것*
         let a6 = a2.slice(2,4);
         document.write(`a2.slice(2,4) = [${a6}] <br>`);
 
@@ -68,7 +71,7 @@
         });
         document.write(`a2.sort() = [${a7}] <br>`);
 
-        //join 배열을 문자열변환(내가 원하는 형태로 변화)
+        //join 배열을 문자열변환(내가 원하는 형태로 변화)*
         let dataValue=a2.join("=");
         document.write(`a2.join("=") = [${dataValue}] <br>`);
     </script>
