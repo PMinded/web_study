@@ -27,12 +27,12 @@
                     id.nextSibling.textContent="성공"
                 }
                 if(pwd.value!==chkPWD){
-                    pwd.nextSibling.textContent="패스워드가 맞지 않습니다."
+                    pwd.nextSibling.textContent="패스워드가 맞지 않습니다.";
                     pwd.value="";
                     pwd.focus();
                     return;
                 }else{
-                    pwd.nextSibling.textContent="성공"
+                    pwd.nextSibling.textContent="성공";
                 }
                 myform.submit();    //서버에 데이터를 전송하고 form에 있는 데이터는 리셋한다.
             });
